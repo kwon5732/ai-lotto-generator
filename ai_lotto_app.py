@@ -82,4 +82,3 @@ if st.session_state.history:
     for i, (dt, nums, strat) in enumerate(reversed(st.session_state.history[-10:]), 1):
         st.markdown(f"{i}. {dt.strftime('%Y-%m-%d %H:%M:%S')} → " +
                     " ".join(f"{n:02d}" for n in nums))
-streamlit
